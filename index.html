@@ -37,6 +37,12 @@
             margin-bottom: 1rem;
         }
 
+        .logo {
+            max-width: 100px; /* Adjust the logo size */
+            margin: 0 auto 20px auto; /* Center and add spacing below */
+            display: block;
+        }
+
         .tagline {
             font-size: 1.2rem;
             color: #888; /* Light gray for contrast */
@@ -63,13 +69,17 @@
 
         /* AI-Inspired Glow Effect */
         h1, .coming-soon {
-            text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(0, 0, 0);
+            text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(255, 255, 255), 0 0 30px rgb(0, 0, 0);
         }
 
         /* Responsive adjustments for small screens */
         @media (max-width: 600px) {
             h1 {
                 font-size: 2.5rem; /* Adjust font size for small screens */
+            }
+
+            .logo {
+                max-width: 70px; /* Scale down logo for small screens */
             }
 
             .coming-soon {
@@ -88,6 +98,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="WhatsApp Image 2024-11-02 at 16.17.19_397973dd.jpg" alt="SortMyEntries Logo" class="logo">
         <h1>SORTMYENTRIES</h1>
         <p class="tagline">Revolutionizing tickets booking with AI.</p>
         <hr>
